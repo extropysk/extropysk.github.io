@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="o; url='https://blog.extropy.sk'" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extropy</title>
   </head>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
   <body>
-    <a href="https://blog.extropy.sk">Click here to redirect to blog.extropy.sk</a>
+    <div class="container">
+      <lightning-widget
+        name="Extropy"
+        accent="#212121"
+        to="extropy@getalby.com"
+        image="https://avatars.githubusercontent.com/t/8106610"
+        amounts="1000, 10000, 25000"
+        labels="1k⚡,10k⚡,25k⚡"
+      />
+    </div>
+    <script src="https://embed.twentyuno.net/js/app.js"></script>
   </body>
 </html>

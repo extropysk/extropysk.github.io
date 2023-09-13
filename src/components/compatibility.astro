@@ -3,68 +3,101 @@ import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const fe: Array<CompatibilityItem> = [
   {
     title: "React",
-    icon: "frameworks/react",
+    icon: "simple-icons:react",
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
+    title: "React Native",
+    icon: "simple-icons:expo",
+    url: "https://reactnative.dev/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
+    title: "Next.js",
+    icon: "simple-icons:nextdotjs",
+    url: "https://nextjs.org/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
+    title: "Vue.js",
+    icon: "simple-icons:vuedotjs",
     url: "https://vuejs.org/",
   },
   {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
+    title: "MUI",
+    icon: "simple-icons:mui",
+    url: "https://mui.com/",
   },
   {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "Tailwind CSS",
+    icon: "simple-icons:tailwindcss",
+    url: "https://tailwindcss.com/",
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const be: Array<CompatibilityItem> = [
   {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
+    title: "Node.js",
+    icon: "simple-icons:nodedotjs",
+    url: "https://nodejs.org/",
+  },
+  {
+    title: "NestJS",
+    icon: "simple-icons:nestjs",
+    url: "https://nestjs.com/",
+  },
+  {
+    title: "Hasura",
+    icon: "simple-icons:hasura",
+    url: "https://hasura.io/",
+  },
+  {
+    title: "Redis",
+    icon: "simple-icons:redis",
+    url: "https://redis.io/",
+  },
+  {
+    title: "PostgreSQL",
+    icon: "simple-icons:postgresql",
+    url: "https://www.postgresql.org/",
+  },
+  {
+    title: "MongoDB",
+    icon: "simple-icons:mongodb",
+    url: "https://www.mongodb.com/",
+  },
+];
+
+const infrastructure: Array<CompatibilityItem> = [
+  {
+    title: "AWS",
+    icon: "simple-icons:amazonaws",
+    url: "https://aws.amazon.com/",
   },
   {
     title: "Vercel",
-    icon: "platforms/vercel",
+    icon: "simple-icons:vercel",
     url: "https://vercel.com/",
   },
   {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
+    title: "Docker",
+    icon: "simple-icons:docker",
+    url: "https://www.docker.com/",
   },
   {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
+    title: "Grafana",
+    icon: "simple-icons:grafana",
+    url: "https://grafana.com/",
   },
   {
     title: "GitHub",
-    icon: "fa-brands:github",
+    icon: "simple-icons:github",
     url: "https://pages.github.com/",
   },
   {
     title: "GitLab",
-    icon: "fa-brands:gitlab",
+    icon: "simple-icons:gitlab",
     url: "https://docs.gitlab.com/ee/user/project/pages/",
   },
 ];
@@ -76,14 +109,7 @@ const platforms: Array<CompatibilityItem> = [
     <span class="text-primary">framework</span>
      and deploy to your favorite <span class="text-primary">platform</span>.
   </Fragment>
-  <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
-  />
+  <CompatibilityList items={fe} title="frontend" />
+  <CompatibilityList items={be} title="backend" />
+  <CompatibilityList items={infrastructure} title="infrastructure" />
 </ContentSection>

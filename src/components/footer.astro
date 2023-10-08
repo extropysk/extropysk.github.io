@@ -10,7 +10,7 @@ const links: Array<FooterLink> = [
     icon: "mdi:home",
   },
   {
-    url: "https://www.linkedin.com/groups/9021919/",
+    url: "https://www.linkedin.com/company/extropysk",
     description: "LinkedIn",
     icon: "simple-icons:linkedin",
   },
@@ -27,8 +27,11 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<footer class="relative flex h-64 items-center justify-center" id="footer">
-  <div class="absolute inset-0 overflow-hidden opacity-40">
+<footer
+  class="relative flex h-64 items-center justify-center bg-offset"
+  id="footer"
+>
+  <div class="absolute inset-0 hidden overflow-hidden opacity-40 dark:block">
     <HeroImage />
   </div>
   <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">

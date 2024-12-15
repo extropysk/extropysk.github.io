@@ -20,16 +20,6 @@ const fe: Array<CompatibilityItem> = [
     url: "https://nextjs.org/",
   },
   {
-    title: "Vue.js",
-    icon: "simple-icons:vuedotjs",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "MUI",
-    icon: "simple-icons:mui",
-    url: "https://mui.com/",
-  },
-  {
     title: "Tailwind CSS",
     icon: "simple-icons:tailwindcss",
     url: "https://tailwindcss.com/",
@@ -46,16 +36,6 @@ const be: Array<CompatibilityItem> = [
     title: "NestJS",
     icon: "simple-icons:nestjs",
     url: "https://nestjs.com/",
-  },
-  {
-    title: "Supabase",
-    icon: "simple-icons:supabase",
-    url: "https://supabase.com/",
-  },
-  {
-    title: "Redis",
-    icon: "simple-icons:redis",
-    url: "https://redis.io/",
   },
   {
     title: "PostgreSQL",
@@ -76,11 +56,6 @@ const infrastructure: Array<CompatibilityItem> = [
     url: "https://aws.amazon.com/",
   },
   {
-    title: "Vercel",
-    icon: "simple-icons:vercel",
-    url: "https://vercel.com/",
-  },
-  {
     title: "Docker",
     icon: "simple-icons:docker",
     url: "https://www.docker.com/",
@@ -95,18 +70,13 @@ const infrastructure: Array<CompatibilityItem> = [
     icon: "simple-icons:github",
     url: "https://github.com/",
   },
-  {
-    title: "GitLab",
-    icon: "simple-icons:gitlab",
-    url: "https://gitlab.com/",
-  },
 ];
 ---
 
-<ContentSection title="Technologies" id="technologies">
+<ContentSection title="Tech stack" id="technologies">
   <Fragment slot="lead">
-    We are developers. <br />
-     We use <span class="text-primary">code</span> to fit your needs.
+    Ship reliable <span class="text-primary"
+    >JavaScript</span> apps with <br> battle-tested technologies.
   </Fragment>
   <CompatibilityList items={fe} title="frontend" />
   <CompatibilityList items={be} title="backend" />
